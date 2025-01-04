@@ -2,15 +2,15 @@
 using namespace std;
 
 int minMoves2(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        int mid = nums.size()/2;
-        int res = 0;
-        for(int i=0;i<nums.size();i++){
-            res += abs(nums[i] - nums[mid]);
-        }
-
-        return res;
+    sort(nums.begin(), nums.end());
+    int mid = nums.size()/2;
+    int res = 0;
+    for(int i=0;i<nums.size();i++){
+        res += abs(nums[i] - nums[mid]);
     }
+
+    return res;
+}
 
 int main()
 {
