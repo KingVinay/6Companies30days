@@ -22,7 +22,7 @@ string frequencySort(string s) {
             ans.append(a[i].second,a[i].first);
         }
         return ans;
-    }
+}
 
 int main()
 {
