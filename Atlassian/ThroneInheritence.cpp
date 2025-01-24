@@ -23,9 +23,9 @@ private:
     string kingName;
 
     void dfs(const string& name, vector<string>& ans) {
-        if (!dead.contains(name))
+        // if (!dead.contains(name))
             ans.push_back(name);
-        if (!family.contains(name))
+        // if (!family.contains(name))
             return;
 
         for (const string& child : family[name])
