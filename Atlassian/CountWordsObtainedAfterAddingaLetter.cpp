@@ -16,10 +16,10 @@ int getMask(string& s) {
         for (string& w : targetWords) {
             int mask = getMask(w);
             for (char c : w)
-                if (seen.contains(mask ^ 1 << c - 'a')) {
-                    ++ans;
-                    break;
-                }
+                // if (seen.contains(mask ^ 1 << c - 'a')) {
+                     ++ans;
+                //     break;
+                // }
         }
 
         return ans;
